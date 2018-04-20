@@ -1,0 +1,352 @@
+{
+	"rota": {
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 1,  "horario": "05:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC", "J"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 2,  "horario": "05:40", "destino": "Centro", "via": "Copa / Niem ", "obs": ["ABM"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 3,  "horario": "05:50", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 4,  "horario": "05:50", "destino": "Tij.Circ/Uerj ", "via": "Alto B.Vista/UERJ ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 5,  "horario": "06:00", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["GC", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 6,  "horario": "06:10", "destino": "Metrô Tij.", "via": "Alto B. Vista ", "obs": ["GC", "L"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 7,  "horario": "06:10", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 8,  "horario": "06:15", "destino": "Centro", "via": "Copa / Niem ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 9,  "horario": "06:20", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 10,  "horario": "06:30", "destino": "Centro", "via": "DIRETO/COPA ", "obs": ["GC", "D"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 11,  "horario": "06:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["PTB"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 12,  "horario": "06:30", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 13,  "horario": "06:40", "destino": "Tij.Circ/Uerj", "via": "Alto B. Vista ", "obs": ["GC", "L"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 14,  "horario": "06:40", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["GC", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 15,  "horario": "06:50", "destino": "Centro", "via": "Copa / Niem ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 16,  "horario": "07:00", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["ABM", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 17,  "horario": "07:00", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["PTB"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 18,  "horario": "07:10", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["GC", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 19,  "horario": "07:15", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 20,  "horario": "07:20", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["ABM", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 21,  "horario": "07:20", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 22,  "horario": "07:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 23,  "horario": "07:35", "destino": "Centro", "via": "Copa / Niem ", "obs": ["PTB"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 2,  "horario": "07:40", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["GC", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 5,  "horario": "07:50", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 6,  "horario": "08:00", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 7,  "horario": "08:00", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["PTB", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 1,  "horario": "08:10", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 3,  "horario": "08:10", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["ABM", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 8,  "horario": "08:20", "destino": "Centro", "via": "Copa / Niem ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 10,  "horario": "08:20", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 9,  "horario": "08:30", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["GC", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 14,  "horario": "08:30", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 12,  "horario": "08:45", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["PTB", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 11,  "horario": "08:55", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 13,  "horario": "09:00", "destino": "Expr./Cent.", "via": "Copa / Niem ", "obs": ["GC", "E"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 15,  "horario": "09:10", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 16,  "horario": "09:20", "destino": "Centro", "via": "Copa / Niem ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 17,  "horario": "09:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 18,  "horario": "09:30", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 20,  "horario": "09:45", "destino": "Centro", "via": "Copa / Niem ", "obs": ["PTB"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 19,  "horario": "10:00", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 21,  "horario": "10:15", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 22,  "horario": "10:30", "destino": "Centro", "via": "Copa / Niem ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 23,  "horario": "10:45", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 6,  "horario": "11:00", "destino": "Centro", "via": "Copa / Niem ", "obs": ["GC", "A"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 8,  "horario": "11:50", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 9,  "horario": "12:00", "destino": "Centro", "via": "Copa / Niem ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 10,  "horario": "12:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 7,  "horario": "13:00", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 5,  "horario": "13:30", "destino": "Centro", "via": "Copa/Niem/Aterro ", "obs": ["GC", "A"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 11,  "horario": "13:45", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 2,  "horario": "14:00", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 3,  "horario": "14:40", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 12,  "horario": "15:00", "destino": "Centro", "via": "Copa / Niem ", "obs": ["T"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 13,  "horario": "15:30", "destino": "Centro", "via": "J. Botânico ", "obs": ["GC"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 10,  "horario": "16:00", "destino": "Centro", "via": "Copa/Niem/Aterro ", "obs": ["GC", "A", "Z"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 14,  "horario": "16:00", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["T"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 15,  "horario": "16:10", "destino": "Centro", "via": "J. Botânico ", "obs": ["T", "Z"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 16,  "horario": "16:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["T"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 17,  "horario": "17:00", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["T"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 18,  "horario": "17:00", "destino": "Centro", "via": "Copa/Niem/Aterro ", "obs": ["T", "A", "Z"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 19,  "horario": "17:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["T"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 20,  "horario": "17:30", "destino": "Centro", "via": "Copa/Niem/Aterro ", "obs": ["T", "A", "Z"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 21,  "horario": "18:00", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["T"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 9,  "horario": "18:00", "destino": "Centro", "via": "Copa/Niem/Aterro ", "obs": ["T", "A", "Z"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 11,  "horario": "18:30", "destino": "Centro", "via": "J. Botânico ", "obs": ["T", "Z"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 12,  "horario": "19:00", "destino": "Centro", "via": "Copa / Niem ", "obs": ["T", "Z"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 22,  "horario": "19:20", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["T"]
+	},
+	{
+		"origem": "Barra da Tijuca",
+		"cor": "green",
+		"numero": 23,  "horario": "20:30", "destino": "Centro", "via": "Copa / Niem ", "obs": ["T", "Z"]
+	}
+}

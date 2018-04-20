@@ -1,0 +1,28 @@
+{
+  "name": "abmtransporte",
+  "version": "1.0.0",
+  "description": "Aplicação que apresenta os horários, rotas e pontos do sistema de transporte da Associação do Bosque de Marapendi. Barra da Tijuca, Rio de Janeiro, RJ, Brasil.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbertti/ABM.git"
+  },
+  "keywords": [
+    "abm",
+    "transporte",
+    "onibus"
+  ],
+  "author": "Lucas Bertti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lbertti/ABM/issues"
+  },
+  "homepage": "https://github.com/lbertti/ABM#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "firebase-admin": "^5.12.0"
+  }
+}

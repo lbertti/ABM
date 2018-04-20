@@ -1,0 +1,412 @@
+{
+  "Pontos" : { 
+    "Condomínios" : [
+      "Golden Center, 2111",
+      "Unimed",
+      "Cond.Saint Tropez",
+      "Cond. Portal B. (fundos)",
+      "Cond. Costabella",
+      "Cond. Via Cancun",
+      "Cond. Spazio",
+      "Sede da ABM",
+      "Av. Afonso Arinos (esq. H. Cordeiro)"
+    ],
+    "Via Alto da Boa Vista" : [ 
+      "Av. Presidente Vargas, 418 - Previdência Social (pista central)",
+      "Av. Presidente Vargas, 730 - Banco Central (pista central)", 
+      "Av. Presidente Vargas, 4ª Delegacia- DPCA (pista central)", 
+      "Av. Presidente Vargas, Central do Brasil - BRS4 (pista central)", 
+      "Av. Presidente Vargas, Prefeitura, início da baia (pista central)",
+      "Mariz e Barros, 300 - UFERJ",
+      "Mariz e Barros,470 - Confeitaria Trigus",
+      "Mariz e Barros, Hospital Gaffree Guinle, 824",
+      "Almte. Cochrane,32 - Cultura Inglesa",
+      "Almte. Cochrane, Largo Irmão Moises (Wall Mart)",
+      "Almte. Cochrane, 214",
+      "R. Conde de Bonfim, 426 - Ponto Frio",
+      "R. Conde de Bonfim, 560 - Ed. Toronto",
+      "R. Conde de Bonfim, 680 - Bco. Itaú",
+      "R. Conde de Bonfim, 838 - em frente a Lighit",
+      "R. Conde de Bonfim, 1116 - em frente Colégio São José",
+      "R. Conde de Bonfim, 1331 (Herbert Richard)",
+      "R. Edson Passos - Próximo ao Posto Nota 10",
+      "R. Boa Vista - Corpo de Bombeiros",
+      "Estrada de Furnas, 1.275(Comunidade do Maracaí)",
+      "Itanhangá (próximo ao posto ipiranga)",
+      "Itanhangá (em frente ao shopping itanhangá)",
+      "Baia BRT/Metrô - próx. ao Condado de Cascais"
+    ],
+    "Via Jardim Botânico" : [ 
+      "Av. General Justo, 307 (CNC)", 
+      "Rua México, 98", 
+      "A. Presidente Wilson, 123 (Rest. Beduíno)",
+      "Av. B. Mar, junto busto do Getúlio Vargas",
+      "Praia do Flamengo, Antiga Manchete",
+      "Praia do Flamengo, 66",
+      "Praia do Flamengo, 200",
+      "Osvaldo Cruz, 90",
+      "Praia de Botafogo, 228 -C.Empresarial(Ed.Arg)",
+      "Praia de Botafogo, 356 (Ed. Solimar)",
+      "Rua S. Clemente, 38 - Ed. CAPEMISA",
+      "Rua S. Clemente, 250",
+      "Rua S. Clemente, 398 - Ed. P. de Mônaco",
+      "Humaitá, 68 A - ao lado do Colégio Pedro II",
+      "Humaitá, 244 - Próx. Aos Correios(Ag. Grande)",
+      "R. Jardim Botânico, 67 (embaixo do viaduto)",
+      "Jardim Botânico, 266 - TV Globo",
+      "Jardim Botânico, 518 (Ed. Raul Fortunato)",
+      "Jardim Botânico, 720 - (Drogaria Max)",
+      "Jardim Botânico, EMBRAPA",
+      "Praça Santos Dumont (inicio da Praça)",
+      "R. Rodrigo Otavio, 389",
+      "Av. Padre Leonel Franca, 150",
+      "São Conrado - Motel Escort",
+      "Passarela Lgo. de S. Conrado",
+      "Lgo. da Barra - Igreja S. Francisco",
+      "Baia BRT/Metrô - próx. ao Condado de Cascais"
+    ],
+    "Via Copacabana" : [ 
+      "Av. General Justo, 307 (CNC)", 
+      "Rua México, 98", 
+      "A. Presidente Wilson, 123 (Rest. Beduíno)",
+      "Av. B. Mar, junto busto do Getúlio Vargas",
+      "Praia do Flamengo, Antiga Manchete",
+      "Praia do Flamengo, 66",
+      "Praia do Flamengo, 200",
+      "Osvaldo Cruz, 90",
+      "Av.Nações Unidas,228 -C.Empresarial(Ed.Arg)",
+      "Av. Nações Unidas, 356 (Ed. Solimar)",
+      "Av. Nações Unidas Botafogo - Mourisco",
+      "Av.Lauro Sodré/Casa Gourmet Shopping",
+      "Av. Princesa Isabel, 181",
+      "Av. Princesa Isabel,323 - Correios",
+      "Praça do Lido, posto 2",
+      "Av. Atlântica,1782 - AMSTERDAN",
+      "Av. Atlântica,2230 - H. Olinda Rio Othon",
+      "Av. Atlântica,2600 - H. JW Marriott",
+      "Av. Atlântica,3264 - H. Rio Othon Palace",
+      "Av. Atlântica,3880 - Restaurante Chinês",
+      "Av. Rai.Elizabeth,416 - Próx. B. Carvalho",
+      "Av. Vieira Souto,176 - Casa Cult. Laura Alvim",
+      "Av. Vieira Souto,320 - H. Sol de Ipanema",
+      "Av. Vieira Souto,460 - H. Sofitel",
+      "Av. Vieira Souto,594 próx. Anibal de Mendonça",
+      "Av. Vieira Souto,706 - H. Praia de Ipanema",
+      "Av. Delfim Moreira,192 (Posto 11)",
+      "Av. Delfim Moreira,632 - Marina Palace Hotel",
+      "Rua Bartolomeu Mitre,438A, Banco do Brasil",
+      "Rua B. Mitre, em frente ao 23º Batalhão PM",
+      "Av. Padre Leonel Franca, 150",
+      "São Conrado - Motel Escort",
+      "Passarela Lgo. de S. Conrado",
+      "Lgo. da Barra - Igreja S. Francisco",
+      "Baia BRT/Metrô - próx. ao Condado de Cascais"
+    ],
+    "Via Copacabana *(até 09:30)" : [ 
+      "Av. General Justo, 307 (CNC)", 
+      "Rua México, 98", 
+      "A. Presidente Wilson, 123 (Rest. Beduíno)",
+      "Av. B. Mar, junto busto do Getúlio Vargas",
+      "Praia do Flamengo, Antiga Manchete",
+      "Praia do Flamengo, 66",
+      "Praia do Flamengo, 200",
+      "Osvaldo Cruz, 90",
+      "Av.Nações Unidas,228 -C.Empresarial(Ed.Arg)",
+      "Av. Nações Unidas, 356 (Ed. Solimar)",
+      "Av. Nações Unidas Botafogo - Mourisco",
+      "Av.Lauro Sodré/Casa Gourmet Shopping",
+      "*Rua B. Ribeiro,222 -Copa Hotel Residência",
+      "*Rua B. Ribeiro,468 - Gal. Menescal",
+      "*Av. Raul Pompéia,149-Próx.R.Elizabeth",
+      "*Prud. de Morais, 302 prédio Tiffany",
+      "*Prud. de Morais, 614 próx. V. Morais",
+      "*Prud. de Morais, 1132 Hotel Everest",
+      "*Prud. de Morais, 1810 Prox. Rest. Ten-kai",
+      "*Av. Gen. San Martin, 156 próx.Metrô",
+      "Av. Princesa Isabel, 181",
+      "Av. Princesa Isabel,323 - Correios",
+      "Praça do Lido, posto 2",
+      "Av. Atlântica,1782 - AMSTERDAN",
+      "Av. Atlântica,2230 - H. Olinda Rio Othon",
+      "Av. Atlântica,2600 - H. JW Marriott",
+      "Av. Atlântica,3264 - H. Rio Othon Palace",
+      "Av. Atlântica,3880 - Restaurante Chinês",
+      "Av. Rai.Elizabeth,416 - Próx. B. Carvalho",
+      "Av. Vieira Souto,176 - Casa Cult. Laura Alvim",
+      "Av. Vieira Souto,320 - H. Sol de Ipanema",
+      "Av. Vieira Souto,460 - H. Sofitel",
+      "Av. Vieira Souto,594 próx. Anibal de Mendonça",
+      "Av. Vieira Souto,706 - H. Praia de Ipanema",
+      "Av. Delfim Moreira,192 (Posto 11)",
+      "Av. Delfim Moreira,632 - Marina Palace Hotel",
+      "Rua Bartolomeu Mitre,438A, Banco do Brasil",
+      "Rua B. Mitre, em frente ao 23º Batalhão PM",
+      "Av. Padre Leonel Franca, 150",
+      "São Conrado - Motel Escort",
+      "Passarela Lgo. de S. Conrado",
+      "Lgo. da Barra - Igreja S. Francisco",
+      "Baia BRT/Metrô - próx. ao Condado de Cascais"
+    ]
+  },
+  "observacoes" : {
+    "A" : "Atende Aeroporto Santos Dumont",
+    "ABM" : "Saída da Sede da ABM",
+    "C" : "Ponto passarela do Metrô de Sâo Cristovão, Av. Radial Oeste",
+    "D" : "Direto 1ª parada no Rio Sul",
+    "E" : "Expre/Cent. 1ª parada a partir da passarela de São Conrado. Não faz parada no Metrô Barra",
+    "F": "Atenderá o Largo da Barra (2ª à 6ª)",
+    "H":  "Não atende o Ponto da México - Embarque Rest. Beduino,Av. Pres Wilson",
+    "I":  "Somente aos sábados e feriados. Atende ao Lgo. da Barra",
+    "J":  "Haddock Lôbo - Prof. Gabizo - Gal. Canabarro, Mata Machado e Av. Maracanã" ,
+    "GC": "Ponto inicial Golden Center (Av. das Américas, 2111)",
+    "K":  "Rua São Clemente e Nelson Mandela (Embarque próximo ao metrô entre as ruas: Nelson Mandela e Vol. Da Pátria) e n° 45 da Vol. da Pátria (Ed. Barão do Rio Bonito).",
+    "L": "Atende à Rua Jornalista Guima.",
+    "M": "Faz retorno no Supermercado Extra",
+    "N": "Saída da rua Mariz Barros, 273",
+    "O": "Via Praia de Botafogo pista interna",
+    "PTB": "Saída do Portal da Barra Av. das Americas , 411",
+    "SR": "Av. Presidente Vargas, 418 INSS (pista central)",
+    "T": "Saída Av. Américas em frente às Torres",
+    "Y": "Somente funciona de Segunda à Sexta",
+    "U": "(2ª à 6ª) BarraShopping, Mergulhão",
+    "V": "Ponto inicial Rua México, 98",
+    "X": "Ponto inicial na Av Beira Mar junto ao Busto Getúlio Vargas.",
+    "Z": "Ponto final na Rua México, 98"
+  },
+  "Rotas" : {
+    "Metro Tijuca" : {
+      "cor" : "green",
+      "destino" : "Metrô Tij.",
+      "origem" : "Barra da Tijuca",
+      "1" : {
+        "horario" : "06:10",
+        "numero" : 6,
+        "obs" : [ "GC", "L" ],
+        "via" : "Alto B. Vista"
+      }
+    },
+    "Tijuca Circular UERJ" : {
+      "cor" : "green",
+      "destino" : "Tij.Circ/UERJ",
+      "origem" : "Barra da Tijuca",
+      "1" : {
+        "horario" : "05:50",
+        "numero" : 4,
+        "obs" : [ "GC" ],
+        "via" : "Alto B.Vista/UERJ "
+      },
+      "2" : {
+        "numero" : 13, "horario" : "06:40", "via" : "Alto B. Vista ", "obs" : [ "GC", "L" ]
+      }
+    },
+    "Centro": {
+        "cor": "green",
+        "destino": "Centro",
+        "origem": "Barra da Tijuca",
+        "1": {
+            "numero": 1,  "horario": "05:30", "via": "Alto B. Vista ", "obs": ["GC", "J"]
+        },
+        "2": {
+            "numero": 2,  "horario": "05:40", "via": "Copa - Niem ", "obs": ["ABM"]
+        },
+        "3": {
+            "numero": 3,  "horario": "05:50", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "4": {
+            "numero": 5,  "horario": "06:00", "via": "Copa - Niem ", "obs": ["GC", "E"]
+        },
+        "5": {
+            "numero": 7,  "horario": "06:10", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "6": {
+            "numero": 8,  "horario": "06:15", "via": "Copa - Niem ", "obs": ["GC"]
+        },
+        "7": {
+            "numero": 9,  "horario": "06:20", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "8": {
+            "numero": 10,  "horario": "06:30", "via": "DIRETO-COPA ", "obs": ["GC", "D"]
+        },
+        "9": {
+            "numero": 11,  "horario": "06:30", "via": "Alto B. Vista ", "obs": ["PTB"]
+        },
+        "10": {
+            "numero": 12,  "horario": "06:30", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "11": {
+            "numero": 14,  "horario": "06:40", "via": "Copa - Niem ", "obs": ["GC", "E"]
+        },
+        "12": {
+            "numero": 15,  "horario": "06:50", "via": "Copa - Niem ", "obs": ["GC"]
+        },
+        "13": {
+            "numero": 16,  "horario": "07:00", "via": "Copa - Niem ", "obs": ["ABM", "E"]
+        },
+        "14": {
+            "numero": 17,  "horario": "07:00", "via": "Alto B. Vista ", "obs": ["PTB"]
+        },
+        "15": {
+            "numero": 18,  "horario": "07:10", "via": "Copa - Niem ", "obs": ["GC", "E"]
+        },
+        "16": {
+            "numero": 19,  "horario": "07:15", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "17": {
+            "numero": 20,  "horario": "07:20", "via": "Copa - Niem ", "obs": ["ABM", "E"]
+        },
+        "18": {
+            "numero": 21,  "horario": "07:20", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "19": {
+            "numero": 22,  "horario": "07:30", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "20": {
+            "numero": 23,  "horario": "07:35", "via": "Copa - Niem ", "obs": ["PTB"]
+        },
+        "21": {
+            "numero": 2,  "horario": "07:40", "via": "Copa - Niem ", "obs": ["GC", "E"]
+        },
+        "22": {
+            "numero": 5,  "horario": "07:50", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "23": {
+            "numero": 6,  "horario": "08:00", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "24": {
+            "numero": 7,  "horario": "08:00", "via": "Copa - Niem ", "obs": ["PTB", "E"]
+        },
+        "25": {
+            "numero": 1,  "horario": "08:10", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "26": {
+            "numero": 3,  "horario": "08:10", "via": "Copa - Niem ", "obs": ["ABM", "E"]
+        },
+        "27": {
+            "numero": 8,  "horario": "08:20", "via": "Copa - Niem ", "obs": ["GC"]
+        },
+        "28": {
+            "numero": 10,  "horario": "08:20", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "29": {
+            "numero": 9,  "horario": "08:30", "via": "Copa - Niem ", "obs": ["GC", "E"]
+        },
+        "30": {
+            "numero": 14,  "horario": "08:30", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "31": {
+            "numero": 12,  "horario": "08:45", "via": "Copa - Niem ", "obs": ["PTB", "E"]
+        },
+        "32": {
+            "numero": 11,  "horario": "08:55", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "33": {
+            "numero": 13,  "horario": "09:00", "via": "Copa - Niem ", "obs": ["GC", "E"]
+        },
+        "34": {
+            "numero": 15,  "horario": "09:10", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "35": {
+            "numero": 16,  "horario": "09:20", "via": "Copa - Niem ", "obs": ["GC"]
+        },
+        "36": {
+            "numero": 17,  "horario": "09:30", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "37": {
+            "numero": 18,  "horario": "09:30", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "38": {
+            "numero": 20,  "horario": "09:45", "via": "Copa - Niem ", "obs": ["PTB"]
+        },
+        "39": {
+            "numero": 19,  "horario": "10:00", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "40": {
+            "numero": 21,  "horario": "10:15", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "41": {
+            "numero": 22,  "horario": "10:30", "via": "Copa - Niem ", "obs": ["GC"]
+        },
+        "42": {
+            "numero": 23,  "horario": "10:45", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "43": {
+            "numero": 6,  "horario": "11:00", "via": "Copa - Niem ", "obs": ["GC", "A"]
+        },
+        "44": {
+            "numero": 8,  "horario": "11:50", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "45": {
+            "numero": 9,  "horario": "12:00", "via": "Copa - Niem ", "obs": ["GC"]
+        },
+        "46": {
+            "numero": 10,  "horario": "12:30", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "47": {
+            "numero": 7,  "horario": "13:00", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "48": {
+            "numero": 5,  "horario": "13:30", "via": "Copa-Niem-Aterro ", "obs": ["GC", "A"]
+        },
+        "49": {
+            "numero": 11,  "horario": "13:45", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "50": {
+            "numero": 2,  "horario": "14:00", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "51": {
+            "numero": 3,  "horario": "14:40", "via": "Alto B. Vista ", "obs": ["GC"]
+        },
+        "52": {
+            "numero": 12,  "horario": "15:00", "via": "Copa - Niem ", "obs": ["T"]
+        },
+        "53": {
+            "numero": 13,  "horario": "15:30", "via": "J. Botânico ", "obs": ["GC"]
+        },
+        "54": {
+            "numero": 10,  "horario": "16:00", "via": "Copa-Niem-Aterro ", "obs": ["GC", "A", "Z"]
+        },
+        "55": {
+            "numero": 14,  "horario": "16:00", "via": "Alto B. Vista ", "obs": ["T"]
+        },
+        "56": {
+            "numero": 15,  "horario": "16:10", "via": "J. Botânico ", "obs": ["T", "Z"]
+        },
+        "57": {
+            "numero": 16,  "horario": "16:30", "via": "Alto B. Vista ", "obs": ["T"]
+        },
+        "58": {
+            "numero": 17,  "horario": "17:00", "via": "Alto B. Vista ", "obs": ["T"]
+        },
+        "59": {
+            "numero": 18,  "horario": "17:00", "via": "Copa-Niem-Aterro ", "obs": ["T", "A", "Z"]
+        },
+        "60": {
+            "numero": 19,  "horario": "17:30", "via": "Alto B. Vista ", "obs": ["T"]
+        },
+        "61": {
+            "numero": 20,  "horario": "17:30", "via": "Copa-Niem-Aterro ", "obs": ["T", "A", "Z"]
+        },
+        "62": {
+            "numero": 21,  "horario": "18:00", "via": "Alto B. Vista ", "obs": ["T"]
+        },
+        "63": {
+            "numero": 9,  "horario": "18:00", "via": "Copa-Niem-Aterro ", "obs": ["T", "A", "Z"]
+        },
+        "64": {
+            "numero": 11,  "horario": "18:30", "via": "J. Botânico ", "obs": ["T", "Z"]
+        },
+        "65": {
+            "numero": 12,  "horario": "19:00", "via": "Copa - Niem ", "obs": ["T", "Z"]
+        },
+        "66": {
+            "numero": 22,  "horario": "19:20", "via": "Alto B. Vista ", "obs": ["T"]
+        },
+        "67": {
+            "numero": 23,  "horario": "20:30", "via": "Copa - Niem ", "obs": ["T", "Z"]
+        }
+    }
+  }
+}
+
+
+
