@@ -1,0 +1,53 @@
+body {
+	top-margin:20px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: bottom; 
+}
+
+#tabela {
+	text-align: center;
+	padding-top: 38px;
+}
+.sombra {
+	/*SOMBRA:  deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+	text-shadow: 0px 3px 2px rgba(0,0,0,0.4),
+				 0px 6px 4px rgba(0,0,0,0.1),
+				 0px 10px 15px  rgba(0,0,0,0.4); 
+}
+.logomarca {
+	width: 130px;
+	height: 38px;
+	object-fit: contain;
+}
+.onibus {
+    opacity: 0.1;
+	align-content: center;
+}
+
+
+.verde:nth-child(odd) {
+	background-color: rgb(143, 214, 124);
+	color: rgb(23, 77, 9);
+	/*display: none;*/
+	
+}
+.verde:nth-child(even) {
+	background-color: rgb(126, 179, 111);
+	color: rgb(23, 77, 9);
+}
+
+.vermelho:nth-child(odd) {
+	background-color: rgb(248, 163, 163);
+	color: rgb(90, 4, 4);
+}
+.vermelho:nth-child(even) {
+	background-color: rgb(204, 122, 122);
+	color: rgb(90, 4, 4);
+}
+
+
+.amarelo{
+	background-color: rgb(230, 243, 109);
+	color: rgb(89, 95, 1);
+}

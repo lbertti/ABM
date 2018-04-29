@@ -1,0 +1,71 @@
+<!--
+Colocar cada linha em um div e nomear uma classe para esses DIVs, de forma que eles sejam exibidos e escondidos de acordo com a escolha feita nos botões do topo da tela
+Buscar por observação (ex.: todas linhas que passam no Santos Dumont)
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABM Transporte - Não Oficial</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+
+<div class="fixed-top">
+	<div class="container">
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<img src="abm-logo.png" class="logomarca">
+			<button type="button" class="btn btn-secondary btn-success">Origem Barra</button>
+			<button type="button" class="btn btn-secondary btn-danger">Destino Barra</button>
+			<button type="button" class="btn btn-secondary btn-warning">Circular Barra</button>
+			<button type="button" class="btn btn-secondary btn-warning">Circular Shopping</button>
+		</div>
+	</div>
+</div>
+
+<div class="container" id="tabela">
+	<div class="table-responsive">
+                <table class="table table-sm table-bordered">
+			<thead class="thead-dark ">
+				<tr class="sombra">
+					<th scope="col">Núm.</th>
+					<th scope="col">Horário</th>
+					<th scope="col">Origem</th>
+					<th scope="col">Destino</th>
+					<th scope="col">Via</th>
+					<th scope="col">Obs.</th>
+				</tr>
+			</thead>
+                <tbody>
+					<% linhas.forEach(function(linha){ %>
+						<tr class="<%=linha.cor%>">
+							<th scope="row"><%=linha.numero%></th>
+							<td><%=linha.horario%></td>
+							<td><%=linha.origem%></td>
+							<td><%=linha.destino%></td>
+							<td><%=linha.via%></td>
+							<td id="obs">
+								<% for (i=0; i < linha.observacoes.length; i++){ %>
+									<%= linha.observacoes[i]; %>
+								<% }; %>
+							</td>
+	                    </tr>
+					<% }); %>
+    			</tbody>
+            
+		</table>
+	</div>
+	<!--a href="https://docs.wixstatic.com/ugd/b1d477_8016c8612ff04ee38f1b107a7fa34dae.pdf" target="_blank">Baixar PDF com os horários dos ônibus da ABM</a-->
+	<div class="fixed-bottom mx-auto">
+		<div class="container">
+			<div id="div-onibus">
+				<img src="abm-bus.png" class="onibus">
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

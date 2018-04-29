@@ -1,6 +1,6 @@
 {
-	"rota": {
-		"origem": "Barra da Tijuca",
+	"name": "rotas",
+	"rotas": { "origem": "Barra da Tijuca",
 		"cor": "green",
 		"numero": 1,  "horario": "05:30", "destino": "Centro", "via": "Alto B. Vista ", "obs": ["GC", "J"]
 	},
