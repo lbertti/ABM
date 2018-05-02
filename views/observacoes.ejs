@@ -1,0 +1,27 @@
+<!--
+Colocar cada linha em um div e nomear uma classe para esses DIVs, de forma que eles sejam exibidos e escondidos de acordo com a escolha feita nos botões do topo da tela
+Buscar por observação (ex.: todas linhas que passam no Santos Dumont)
+
+-->
+<% include ./parciais/cabecalho %>
+<div class="container" id="tabela">
+	<div class="table-responsive">
+                <table class="table table-sm table-bordered">
+			<thead class="thead-dark ">
+				<tr class="sombra">
+					<th scope="col">Sigla</th>
+					<th scope="col">Significado</th>
+				</tr>
+			</thead>
+            <tbody>
+                <% observacoes.forEach(function(observacao){ %>
+                    <tr class="azul">
+                        <th scope="row" class="align-middle sombra"><%=observacao._id%></th>
+                        <td class="text-justify"><%=observacao.texto%></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+		</table>
+	</div>
+<% include ./parciais/rodape %>
+

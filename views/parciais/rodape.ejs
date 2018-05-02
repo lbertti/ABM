@@ -1,0 +1,64 @@
+	<!--a href="https://docs.wixstatic.com/ugd/b1d477_8016c8612ff04ee38f1b107a7fa34dae.pdf" target="_blank">Baixar PDF com os horários dos ônibus da ABM</a-->
+	<div class="fixed-bottom mx-auto">
+            <div class="container">
+                <div id="div-onibus">
+                    <img src="abm-bus.png" class="onibus">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script>
+        function abreModal(){
+            $('#modalDetalhesLinha').modal();
+        }
+        
+        var tempoFade = 700;
+        
+        $("#todasLinhas").on("click", function(){
+            $(".verde").fadeIn(tempoFade); //ida
+            $(".vermelho").fadeIn(tempoFade); //volta
+            $(".amarelo").fadeIn(tempoFade); //circular
+            $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
+            $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
+            $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+        });	
+        $("#ida").on("click", function(){
+            $(".verde").fadeIn(tempoFade); //ida
+            $(".vermelho").fadeOut(tempoFade); //volta
+            $(".amarelo").fadeOut(tempoFade); //circular
+            $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
+            $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
+            $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+        });	
+        $("#volta").on("click", function(){
+            $(".verde").fadeOut(tempoFade); //ida
+            $(".vermelho").fadeIn(tempoFade); //volta
+            $(".amarelo").fadeOut(IempoFade); //cirIular
+            $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
+            $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
+            $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+        });	
+        $("#circular").on("click", function(){
+            $(".verde").fadeOut(tempoFade); //ida
+            $(".vermelho").fadeOut(tempoFade); //volta
+            $(".amarelo").fadeIn(tempoFade); //circular
+            $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
+            $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
+            $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+        });	
+        $("#sabado").on("click", function(){
+            $(".verde").fadeOut(tempoFade); //ida
+            $(".vermelho").fadeOut(tempoFade); //volta
+            $(".amarelo").fadeOut(tempoFade); //circular
+            $(".sabado").fadeIn(tempoFade); //Linhas que funcionam somente aos sábados
+            $(".verdeSab").fadeIn(tempoFade); //ida no Sábado
+            $(".vermelhoSab").fadeIn(tempoFade); //volta no Sábado
+        });	
+        
+        
+        </script>
+        <p></p>
+        <p></p>
+    </body>
+</html>

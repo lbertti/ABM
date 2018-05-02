@@ -1,5 +1,4 @@
 body {
-	top-margin:20px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: bottom; 
@@ -7,7 +6,7 @@ body {
 
 #tabela {
 	text-align: center;
-	padding-top: 38px;
+	padding-top: 56px;
 }
 .sombra {
 	/*SOMBRA:  deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
@@ -26,28 +25,62 @@ body {
 }
 
 
-.verde:nth-child(odd) {
+.verde:nth-child(odd){
 	background-color: rgb(143, 214, 124);
-	color: rgb(23, 77, 9);
+	color: rgb(0, 0, 0);
 	/*display: none;*/
 	
 }
-.verde:nth-child(even) {
+.verde:nth-child(even){
 	background-color: rgb(126, 179, 111);
-	color: rgb(23, 77, 9);
+	color: rgb(0, 0, 0);
 }
 
-.vermelho:nth-child(odd) {
+.vermelho:nth-child(odd){
 	background-color: rgb(248, 163, 163);
-	color: rgb(90, 4, 4);
+	color: rgb(0, 0, 0);
 }
-.vermelho:nth-child(even) {
+.vermelho:nth-child(even){
 	background-color: rgb(204, 122, 122);
-	color: rgb(90, 4, 4);
+	color: rgb(0, 0, 0);
+}
+
+.verdeSab:nth-child(odd) {
+	background-color: rgb(143, 214, 124);
+	color: rgb(0, 0, 0);
+	/*display: none;*/
+	
+}
+.verdeSab:nth-child(even){
+	background-color: rgb(126, 179, 111);
+	color: rgb(0, 0, 0);
+}
+
+.vermelhoSab:nth-child(odd){
+	background-color: rgb(248, 163, 163);
+	color: rgb(0, 0, 0);
+}
+.vermelhoSab:nth-child(even) {
+	background-color: rgb(204, 122, 122);
+	color: rgb(0, 0, 0);
+}
+
+.amarelo:nth-child(odd) {
+	background-color: rgb(230, 243, 109);
+	color: rgb(0, 0, 0);
+}
+.amarelo:nth-child(even) {
+	background-color: rgb(199, 207, 121);
+	color: rgb(0, 0, 0);
 }
 
 
-.amarelo{
-	background-color: rgb(230, 243, 109);
-	color: rgb(89, 95, 1);
+
+.azul:nth-child(odd) {
+	background-color: #6baff8;
+	color: rgb(0, 0, 0);
+}
+.azul:nth-child(even) {
+	background-color: #aad3ff;
+	color: rgb(0, 0, 0);
 }

@@ -25,16 +25,55 @@ app.use(express.static("publico"));
 app.set("view engine", "ejs");
 
 
+
+
 app.get("/", function(req, res){
   console.log("ENTREI NA RAIZ DO SITE!");
   Linha.find( {}, function(err, linhas){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS LINHAS DO TRANSPORTE DA ABM. "  + err);
     } else {
-      res.render("index.ejs", {linhas: linhas});
+      Rota.find( {}, function(err, rotas){
+        if (err) {
+          res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
+        } else {
+          res.render("index.ejs", {linhas: linhas, rotas: rotas});
+        }
+      }).sort({ via: 1});
     }
-  }).sort({ cor: 1, horario: 1, numero: 1});
+  }).sort({ ordem: 1, horario: 1, numero: 1});
 });
+
+
+app.get("/observacoes", function(req, res){
+  console.log("ENTREI NA EXIBIÇÃO DE OBSERVAÇÕES!");
+  Observacao.find( {}, function(err, observacoes){
+    if (err) {
+      res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS OBSERVACOES DO TRANSPORTE DA ABM. "  + err);
+    } else {
+      Rota.find( {}, function(err, rotas){
+        if (err) {
+          res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
+        } else {
+          res.render("observacoes.ejs", {observacoes: observacoes, rotas: rotas});
+        }
+      }).sort({ via: 1});
+    }
+  }).sort({ _id: 1, texto: 1});
+});
+
+app.get("/rotas", function(req, res){
+  console.log("ENTREI NA EXIBIÇÃO DE ROTAS!");
+  Rota.find( {}, function(err, rotas){
+    if (err) {
+      res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
+    } else {
+      res.render("rotas.ejs", {rotas: rotas});
+    }
+  }).sort({ via: 1});
+});
+
+
 
 
 app.get("/cargacompleta", function(req, res){
@@ -51,40 +90,3 @@ app.listen(8000, "127.0.0.1", function(){
 
 
 
-
-
-
-
-
-
-///////// DESISTI DO FIREBASE
-
-// // Initialize Firebase
-// var config = {
-//   apiKey: "AIzaSyBj6nmGRzOAapzGuioQmfEfVyQCmSlhyUs",
-//   authDomain: "berttibrazil.firebaseapp.com",
-//   databaseURL: "https://berttibrazil.firebaseio.com",
-//   projectId: "berttibrazil",
-//   storageBucket: "berttibrazil.appspot.com",
-//   messagingSenderId: "327691322787"
-// };
-// firebase.initializeApp(config);
-
-// /*FIREBASE CODE*/
-// var serviceAccount = require("C:/Users/lbert/Documents/GitHub/ABM/berttibrazil-firebase-adminsdk-ifxvw-52625ddfc3.json");
-
-// admin.initializeApp({
-//   credential: admin.credential.cert(serviceAccount),
-//   databaseURL: "https://berttibrazil.firebaseio.com"
-// });
-// /*FIM DO FIREBASE CODE*/
-
-// app.get("/", function(req, res){
-// 	console.log("entrou na raiz do ABM TRANSPORTE");
-//   var database = firebase.database();
-//   var consulta = database.ref().once('value').then(function(dados){
-//     dados.val().dataSnapshot.forEach(function( childSnapshot){
-//       console.log(childSnapshot.val);  
-//     } );
-// //    console.log(dados.val());
-//   });

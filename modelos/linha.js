@@ -2,23 +2,24 @@ var mongoose = require("mongoose");
 
 //SCHEMA SETUP - criando o SCHEMA pro BD "abmtransporte"
 var linhaSchema = new mongoose.Schema({
-    numero: String,
+    numero: Number,
     horario: String,
     origem: String,
     destino: String,
     via: String,
-/*    rota: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Rota" // collection que será relacionada a esse registro
-    },
+    // rota: {
+    //         type: mongoose.Schema.Types.ObjectId,
+    //         ref: "Rota" // collection que será relacionada a esse registro
+    // },
     observacoes: [
         {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Observacao" // collection que será relacionada a esse registro
+            _id: String,
+            texto: String
         }
-    ], */
-    observacoes: [],
-    cor: String
+    ], 
+    // observacoes: [],
+    cor: String,
+    ordem: Number
 });
 
 //var Campground = mongoose.model("Campground", campgoundSchema);
