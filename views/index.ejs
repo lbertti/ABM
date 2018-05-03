@@ -2,6 +2,8 @@
 Colocar cada linha em um div e nomear uma classe para esses DIVs, de forma que eles sejam exibidos e escondidos de acordo com a escolha feita nos botões do topo da tela
 Buscar por observação (ex.: todas linhas que passam no Santos Dumont)
 
+ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por divs
+
 -->
 <% include ./parciais/cabecalho %>
 <div class="container" id="tabela">
@@ -18,7 +20,7 @@ Buscar por observação (ex.: todas linhas que passam no Santos Dumont)
 				</tr>
 			</thead>
 			<tbody>
-				<% var i = 0 %>
+				<% var i = 0; %>
 				<% linhas.forEach(function(linha){ %>
 					<tr class="<%=linha.cor%>" onclick="abreModal(	'<%=linha.origem%>', 
 																	'<%=linha.destino%>', 
@@ -37,16 +39,20 @@ Buscar por observação (ex.: todas linhas que passam no Santos Dumont)
 						<% } %>
 						<td id="obs" class="align-middle">
 							<% if (linha.observacoes.length > 0){ %>
-								<a tabindex="<%= i %>" role="button" class="btn btn-light btn-sm" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" 
+								<a tabindex="<%= i %>" role="button" class="btn btn-light btn-sm" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom"
 								data-content="
 									<% for (i=0; i < linha.observacoes.length; i++){ %>
-										<%if(i=0){%>_________________________________________<%};%> <%= linha.observacoes[i]._id; %>:  <%= linha.observacoes[i].texto;%>
+										<% if( i > 0 ) { %>
+											_________________________________________
+										<% }; %> 
+										<%= linha.observacoes[i]._id; %>:  <%= linha.observacoes[i].texto;%>
 									<% }; %>">
 									<% for (i=0; i < linha.observacoes.length; i++){ %>
 										<%= linha.observacoes[i]._id; %>
 									<% }; %>
 								</a>
-							<% }; i++; %>
+							<% }; %>
+						<% i++; %>
 						</td>
 					</tr>
 				<% }); %>

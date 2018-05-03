@@ -16,7 +16,8 @@
         });
         $('.popover-dismiss').popover({
             trigger: 'focus'
-        })
+		})
+		$
     </script>
 </head>
 <body>
@@ -24,13 +25,6 @@
 	
 <div class="fixed-top">
 	<div class="container">
-	<!-- <div class="btn-group" role="group" aria-label="Basic example">
-	<img src="abm-logo.png" class="logomarca">
-	<button type="button" class="btn btn-secondary btn-success">Origem Barra</button>
-	<button type="button" class="btn btn-secondary btn-danger">Destino Barra</button>
-	<button type="button" class="btn btn-secondary btn-warning">Circular Barra</button>
-	<button type="button" class="btn btn-secondary btn-warning">Circular Shopping</button>
-	</div> -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="/">
 				ABM 
@@ -65,12 +59,17 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<% rotas.forEach(function(rota){ %>
-								<a class="dropdown-item" href="#"><i class="far fa-hand-paper"></i> <%=rota.via%></a>
+								<a class="dropdown-item" href="/rota/<%= rota._id %>"><i class="far fa-hand-paper"></i> <%= rota.via %></a>
 							<% }); %>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</nav>	
+		<!-- <div class="navbar-text fixed-top d-flex flex-row-reverse">
+			<button class="btn btn-warning"><i class="fas fa-minus"></i></button>
+			Fonte
+			<button class="btn btn-warning"><i class="fas fa-plus"></i></button>
+		</div> -->
 	</div>
 </div>

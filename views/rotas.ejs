@@ -1,0 +1,26 @@
+<% include ./parciais/cabecalho %>
+
+
+<div class="container" id="tabela">
+    <div class="table-responsive">
+        <table class="table table-sm table-striped">
+            <thead class="thead-dark ">
+                <tr class="sombra">
+                    <th scope="col" colspan="2"><%= pontos.via %></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(i=0; i < pontos.paradas.length; i++) { %>
+                    <tr>
+                        <th scope="row" class="align-middle"><i class="far fa-dot-circle"></i></th>
+                        <td class="text-justify"><% if(pontos.paradas[i].indexOf("*") > -1) { %><i class="fas fa-asterisk"></i><% } %> <%= pontos.paradas[i].replace("*","");%> </td>
+                    </tr>
+                <% }; %>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+
+  <% include ./parciais/rodape %>
+

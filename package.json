@@ -4,6 +4,7 @@
   "description": "Informações de rotas, horários e pontos dos sistema de transporte da ABM (Barra da Tijuca, Rio de Janeiro)",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
     "mongoose": "^5.0.16"

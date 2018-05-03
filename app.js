@@ -1,4 +1,4 @@
-//TRANSPORTE ABM - TESTE DE USO DO DATABASE NO FIREBASE
+//TRANSPORTE ABM - Mongo DB / Express / DOM Manipulation with jQuery / Bootstrap /
 
 /*
 - Detalhamento de dados sobre uma determinada linha:
@@ -8,7 +8,8 @@
 */
 
 var express = require("express"),
-	app = express(),
+  app = express(),
+  bodyParser = require("body-parser"),
   mongoose = require("mongoose"),
   carregaTudao = require("./cargaDados"),
   Rota = require("./modelos/rota.js"),
@@ -21,6 +22,7 @@ mongoose.connect("mongodb://localhost/abmtransporte", function(err){
   }
 });
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("publico"));
 app.set("view engine", "ejs");
 
@@ -33,7 +35,7 @@ app.get("/", function(req, res){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS LINHAS DO TRANSPORTE DA ABM. "  + err);
     } else {
-      Rota.find( {}, function(err, rotas){
+      Rota.find( {}, {via:1}, function(err, rotas){
         if (err) {
           res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
         } else {
@@ -51,7 +53,7 @@ app.get("/observacoes", function(req, res){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS OBSERVACOES DO TRANSPORTE DA ABM. "  + err);
     } else {
-      Rota.find( {}, function(err, rotas){
+      Rota.find( {}, {via:1}, function(err, rotas){
         if (err) {
           res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
         } else {
@@ -62,18 +64,23 @@ app.get("/observacoes", function(req, res){
   }).sort({ _id: 1, texto: 1});
 });
 
-app.get("/rotas", function(req, res){
+app.get("/rota/:idRota", function(req, res){
+  var rotaDesejada = req.params.idRota;
   console.log("ENTREI NA EXIBIÇÃO DE ROTAS!");
-  Rota.find( {}, function(err, rotas){
+  Rota.find( {}, {via:1}, function(err, rotas){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
     } else {
-      res.render("rotas.ejs", {rotas: rotas});
+      Rota.findById(rotaDesejada, function(err, pontos){
+        if (err) {
+          res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
+        } else {
+          res.render("rotas.ejs", {rotas: rotas, pontos: pontos});
+        }
+      });
     }
   }).sort({ via: 1});
 });
-
-
 
 
 app.get("/cargacompleta", function(req, res){
@@ -82,8 +89,9 @@ app.get("/cargacompleta", function(req, res){
   res.send("CARGA EXECUTADA!");
 });
 
+//app.listen(process.env.PORT, process.env.IP, function(){
 app.listen(8000, "127.0.0.1", function(){
-  console.log("ABM *** SERVIÇO NO AR!!! ESCUTANDO EM 127.0.0.1:8000"); 
+  console.log("ABM *** SERVIÇO NO AR!");
 });
 
 

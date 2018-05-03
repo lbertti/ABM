@@ -16,36 +16,36 @@
         var tempoFade = 700;
         
         $("#todasLinhas").on("click", function(){
-            $(".verde").fadeIn(tempoFade); //ida
-            $(".vermelho").fadeIn(tempoFade); //volta
-            $(".amarelo").fadeIn(tempoFade); //circular
             $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
             $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
             $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+            $(".verde").fadeIn(tempoFade); //ida
+            $(".vermelho").fadeIn(tempoFade); //volta
+            $(".amarelo").fadeIn(tempoFade); //circular
         });	
         $("#ida").on("click", function(){
-            $(".verde").fadeIn(tempoFade); //ida
             $(".vermelho").fadeOut(tempoFade); //volta
             $(".amarelo").fadeOut(tempoFade); //circular
             $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
             $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
             $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+            $(".verde").fadeIn(tempoFade); //ida
         });	
         $("#volta").on("click", function(){
             $(".verde").fadeOut(tempoFade); //ida
-            $(".vermelho").fadeIn(tempoFade); //volta
-            $(".amarelo").fadeOut(IempoFade); //cirIular
+            $(".amarelo").fadeOut(tempoFade); //cirIular
             $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
             $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
             $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+            $(".vermelho").fadeIn(tempoFade); //volta
         });	
         $("#circular").on("click", function(){
             $(".verde").fadeOut(tempoFade); //ida
             $(".vermelho").fadeOut(tempoFade); //volta
-            $(".amarelo").fadeIn(tempoFade); //circular
-            $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
             $(".verdeSab").fadeOut(tempoFade); //ida no Sábado
             $(".vermelhoSab").fadeOut(tempoFade); //volta no Sábado
+            $(".amarelo").fadeIn(tempoFade); //circular
+            $(".sabado").fadeOut(tempoFade); //Linhas que funcionam somente aos sábados
         });	
         $("#sabado").on("click", function(){
             $(".verde").fadeOut(tempoFade); //ida
@@ -56,6 +56,8 @@
             $(".vermelhoSab").fadeIn(tempoFade); //volta no Sábado
         });	
         
+        $(".vermelho").css("display", "none");
+
         
         </script>
         <p></p>
