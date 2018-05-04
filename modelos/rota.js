@@ -3,6 +3,7 @@ var mongoose = require("mongoose");
 //SCHEMA SETUP - criando o SCHEMA pro BD "abmtransporte"
 var rotaScheema = mongoose.Schema({
     via: String,
+    sentido: String,
     paradas: []
 });
 

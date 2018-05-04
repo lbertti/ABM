@@ -35,13 +35,13 @@ app.get("/", function(req, res){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS LINHAS DO TRANSPORTE DA ABM. "  + err);
     } else {
-      Rota.find( {}, {via:1}, function(err, rotas){
+      Rota.find( {}, {sentido: 1, via:1}, function(err, rotas){
         if (err) {
           res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
         } else {
-          res.render("index.ejs", {linhas: linhas, rotas: rotas});
+          res.render("index.ejs", {linhas: linhas, rotas: rotas, mostraTodasLinhas: true});
         }
-      }).sort({ via: 1});
+      }).sort({ sentido:1, via: 1}); //recupera e ordena rotas para preencher o cabeçalho
     }
   }).sort({ ordem: 1, horario: 1, numero: 1});
 });
@@ -53,13 +53,13 @@ app.get("/observacoes", function(req, res){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS OBSERVACOES DO TRANSPORTE DA ABM. "  + err);
     } else {
-      Rota.find( {}, {via:1}, function(err, rotas){
+      Rota.find( {}, {sentido:1, via:1}, function(err, rotas){
         if (err) {
           res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
         } else {
-          res.render("observacoes.ejs", {observacoes: observacoes, rotas: rotas});
+          res.render("observacoes.ejs", {observacoes: observacoes, rotas: rotas, mostraTodasLinhas: false});
         }
-      }).sort({ via: 1});
+      }).sort({ sentido: 1, via: 1}); //recupera e ordena rotas para preencher o cabeçalho
     }
   }).sort({ _id: 1, texto: 1});
 });
@@ -67,7 +67,7 @@ app.get("/observacoes", function(req, res){
 app.get("/rota/:idRota", function(req, res){
   var rotaDesejada = req.params.idRota;
   console.log("ENTREI NA EXIBIÇÃO DE ROTAS!");
-  Rota.find( {}, {via:1}, function(err, rotas){
+  Rota.find( {}, {sentido:1, via:1}, function(err, rotas){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
     } else {
@@ -75,11 +75,22 @@ app.get("/rota/:idRota", function(req, res){
         if (err) {
           res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
         } else {
-          res.render("rotas.ejs", {rotas: rotas, pontos: pontos});
+          res.render("rotas.ejs", {rotas: rotas, pontos: pontos, mostraTodasLinhas: false});
         }
       });
     }
-  }).sort({ via: 1});
+  }).sort({ sentido:1, via: 1}); //recupera e ordena rotas para preencher o cabeçalho
+});
+
+app.get("/sobre", function(req, res){
+  console.log("ENTREI NA EXIBIÇÃO DO SOBRE!");
+  Rota.find( {}, { sentido: 1, via:1}, function(err, rotas){
+    if (err) {
+      res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
+    } else {
+      res.render("sobre.ejs", {rotas: rotas, mostraTodasLinhas: false});
+    }
+  }).sort({ sentido: 1, via: 1}); //recupera e ordena rotas para preencher o cabeçalho
 });
 
 

@@ -38,18 +38,24 @@
 					<!-- <li class="nav-item active" id="liTodasLinhas">
 						<a class="nav-link" href="/">Todas Linhas <span class="sr-only">(current)</span></a>
 					</li> -->
-					<li class="nav-item dropdown" id="liDropdownLinhas">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Linhas
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="/"><i class="fas fa-exchange-alt"></i> Todas</a>
+					<% if(mostraTodasLinhas) { %> 
+						<li class="nav-item dropdown" id="liDropdownLinhas">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Linhas
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="/"><i class="fas fa-exchange-alt"></i> Todas</a>
 								<div class="dropdown-item" id="ida"><i class="fas fa-arrow-right"></i> Ida</div>
 								<div class="dropdown-item" id="volta"><i class="fas fa-arrow-left"></i> Volta</div>
 								<div class="dropdown-item" id="circular"><i class="fas fa-sync"></i> Circular Barra</div>
 								<div class="dropdown-item" id="sabado"><i class="far fa-calendar"></i> Sábado</div>
-								</div>
-					</li>
+							</div>
+						</li>
+					<% } else { %> <!--mostra apenas o link que leva ao carregamento de todas as linhas-->
+						<li class="nav-item">
+							<a class="nav-link" href="/">Linhas</a>
+						</li>
+					<% }; %>
 					<li class="nav-item">
 						<a class="nav-link" href="/observacoes">Observações</a>
 					</li>
@@ -58,10 +64,32 @@
 							Pontos
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<% var sentido = "" %>
 							<% rotas.forEach(function(rota){ %>
+								<% if( sentido != rota.sentido) { %>
+									<div class="dropdown-item disabled">
+										<span class="badge badge-secondary largo100
+											 <% if( rota.sentido === "BARRA" ) { %>
+													vermelhoMenu">SENTIDO
+											<% } else if( rota.sentido === "CENTRO" ) { %>	
+													verdeMenu">SENTIDO
+											<% } else if( rota.sentido === "CIRCULAR" ) { %>	
+													amareloMenu">
+											<% } else if( rota.sentido === "TODOS" ) { %>	
+													azul">
+											<% }; %>	
+											<%= rota.sentido %>
+										</span>
+									</div>
+									<% sentido = rota.sentido; %>
+								<% }; %>
+
 								<a class="dropdown-item" href="/rota/<%= rota._id %>"><i class="far fa-hand-paper"></i> <%= rota.via %></a>
 							<% }); %>
 						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/sobre">Sobre</a>
 					</li>
 				</ul>
 			</div>

@@ -8,6 +8,11 @@ body {
 	text-align: center;
 	padding-top: 56px;
 }
+
+.largo100{
+	width: 100%;
+}
+
 .sombra {
 	/*SOMBRA:  deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
 	text-shadow: 0px 3px 2px rgba(0,0,0,0.4),
@@ -26,51 +31,49 @@ body {
 
 
 .verde:nth-child(odd){
-	background-color: rgb(143, 214, 124);
+	background-color: rgba(0, 255, 0, 0.3);
 	color: rgb(0, 0, 0);
-	/*display: none;*/
-	
 }
 .verde:nth-child(even){
-	background-color: rgb(126, 179, 111);
+	background-color: rgba(0, 255, 0, 0.15);
 	color: rgb(0, 0, 0);
 }
 
 .vermelho:nth-child(odd){
-	background-color: rgb(248, 163, 163);
+	background-color: rgba(255, 0, 0, 0.3);
 	color: rgb(0, 0, 0);
 }
 .vermelho:nth-child(even){
-	background-color: rgb(204, 122, 122);
+	background-color: rgba(255, 0, 0, 0.15);
 	color: rgb(0, 0, 0);
 }
 
 .verdeSab:nth-child(odd) {
-	background-color: rgb(143, 214, 124);
+	background-color: rgba(0, 255, 0, 0.3);
 	color: rgb(0, 0, 0);
 	/*display: none;*/
 	
 }
 .verdeSab:nth-child(even){
-	background-color: rgb(126, 179, 111);
+	background-color: rgba(0, 255, 0, 0.15);
 	color: rgb(0, 0, 0);
 }
 
 .vermelhoSab:nth-child(odd){
-	background-color: rgb(248, 163, 163);
+	background-color: rgba(255, 0, 0, 0.3);
 	color: rgb(0, 0, 0);
 }
 .vermelhoSab:nth-child(even) {
-	background-color: rgb(204, 122, 122);
+	background-color: rgba(255, 0, 0, 0.15);
 	color: rgb(0, 0, 0);
 }
 
 .amarelo:nth-child(odd) {
-	background-color: rgb(230, 243, 109);
+	background-color: rgba(255, 255, 100, 0.7);
 	color: rgb(0, 0, 0);
 }
 .amarelo:nth-child(even) {
-	background-color: rgb(199, 207, 121);
+	background-color: rgba(255, 255, 100, 0.3);
 	color: rgb(0, 0, 0);
 }
 
@@ -83,4 +86,25 @@ body {
 .azul:nth-child(even) {
 	background-color: #aad3ff;
 	color: rgb(0, 0, 0);
+}
+
+
+.verdeMenu{
+	background-color: rgba(0, 255, 0, 0.3);
+	color: rgb(0, 0, 0);
+}
+.vermelhoMenu{
+	background-color: rgba(255, 0, 0, 0.3);
+	color: rgb(0, 0, 0);
+}
+.amareloMenu{
+	background-color: rgba(255, 255, 100, 0.7);
+	color: rgb(0, 0, 0);
+}
+
+.carrossel{
+	max-width: 300px;
+	max-height: 300px;
+	width: auto;
+	height: auto;
 }

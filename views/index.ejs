@@ -23,14 +23,18 @@ ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por d
 				<% var i = 0; %>
 				<% linhas.forEach(function(linha){ %>
 					<tr class="<%=linha.cor%>">
-						<th scope="row" class="align-middle"><%=linha.numero%></th>
-						<td class="align-middle"><%=linha.horario%></td>
+						<th scope="row" class="align-middle"><%= linha.numero %></th>
+						<td class="align-middle"><%= linha.horario %></td>
 						<% if(linha.cor.indexOf("amarelo") > -1){ %>
-							<td colspan=3 class="align-middle"><%=linha.destino%></td>
+							<td colspan=3 class="align-middle">
+								<% if(linha.destino.indexOf("Shopping") > -1){ %>
+									<i class="fas fa-shopping-bag"></i>
+								<% } %>
+									<%= linha.destino %></td>
 						<% } else { %>
-							<td class="align-middle"><%=linha.origem%></td>
-							<td class="align-middle"><%=linha.destino%></td>
-							<td class="align-middle"><%=linha.via%></td>
+							<td class="align-middle"><%= linha.origem %></td>
+							<td class="align-middle"><%= linha.destino %></td>
+							<td class="align-middle"><%= linha.via %></td>
 						<% } %>
 						<td id="obs" class="align-middle">
 							<% if (linha.observacoes.length > 0){ %>
@@ -62,7 +66,8 @@ ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por d
 						<th scope="col">Obs.</th>
 					</tr>
 				</thead>
-			</table>
+		</table>
 	</div>
+</div>
 <% include ./parciais/rodape %>
 
