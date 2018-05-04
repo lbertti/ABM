@@ -22,12 +22,7 @@ ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por d
 			<tbody>
 				<% var i = 0; %>
 				<% linhas.forEach(function(linha){ %>
-					<tr class="<%=linha.cor%>" onclick="abreModal(	'<%=linha.origem%>', 
-																	'<%=linha.destino%>', 
-																	'<%=linha.numero%>', 
-																	'<%=linha.horario%>', 
-																	'<%=linha.via%>', 
-																	'<%=linha.obs%>' )">
+					<tr class="<%=linha.cor%>">
 						<th scope="row" class="align-middle"><%=linha.numero%></th>
 						<td class="align-middle"><%=linha.horario%></td>
 						<% if(linha.cor.indexOf("amarelo") > -1){ %>
