@@ -15,8 +15,9 @@ var express = require("express"),
   Rota = require("./modelos/rota.js"),
   Observacao = require("./modelos/observacao.js"),
   Linha = require("./modelos/linha.js");
-  
-mongoose.connect("mongodb://localhost/abmtransporte", function(err){
+
+//mongoose.connect("mongodb://localhost/abmtransporte", function(err){
+mongoose.connect(process.env.DATABASEURL, function(err){ //usando a variável de ambiente
   if(err){
     console.log("MONGOOSE: erro ao executar o mongoose.connect(...) -------------------------------" + err);
   }
