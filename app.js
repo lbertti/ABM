@@ -101,8 +101,8 @@ app.get("/cargacompleta", function(req, res){
   res.send("CARGA EXECUTADA!");
 });
 
-//app.listen(process.env.PORT, process.env.IP, function(){
-app.listen(8000, "127.0.0.1", function(){
+//app.listen(8000, "127.0.0.1", function(){
+app.listen(process.env.PORT, process.env.IP, function(){
   console.log("ABM *** SERVIÇO NO AR!");
 });
 
