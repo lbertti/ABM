@@ -6,7 +6,7 @@
 > Os dados da linha tb devem ser apresentadas nessa DIV para que o usuário não fique perdido na navegação.
 > Ao clicar no div modal ele se fechará
 */
-
+var Promise = require('promise');
 var express = require("express"),
   app = express(),
   bodyParser = require("body-parser"),
@@ -27,7 +27,28 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("publico"));
 app.set("view engine", "ejs");
 
+// var pre = {};
 
+// var obterRotas = function () {
+
+//   return new Promise(function(success, error) {
+//     if(pre.rotas) {
+//       success(pre.rotas);
+//       return
+//     }
+//     Rota.find( {}, {sentido: 1, via:1}, function(err, rotas){
+//         if (err) {
+//           res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
+
+//           error(err)
+
+//         } else {
+//           pre.rotas = rotas;
+//           success(rotas);
+//         }
+//       }).sort({ sentido:1, via: 1}); //recupera e ordena rotas para preencher o cabeçalho
+//   })
+// };
 
 
 app.get("/", function(req, res){
@@ -36,6 +57,17 @@ app.get("/", function(req, res){
     if (err) {
       res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS LINHAS DO TRANSPORTE DA ABM. "  + err);
     } else {
+
+      // obterRotas().done(function (rotas) {
+      //   res.render("index.ejs", {linhas: linhas, rotas: rotas, mostraTodasLinhas: true});
+      // }).catch(function (reason) {
+      //   res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. " + reason);
+      // })
+
+
+
+
+
       Rota.find( {}, {sentido: 1, via:1}, function(err, rotas){
         if (err) {
           res.send("OCORREU UM ERRO AO TENTAR RECUPERAR AS ROTAS DO TRANSPORTE DA ABM. "  + err);
@@ -101,8 +133,8 @@ app.get("/cargacompleta", function(req, res){
   res.send("CARGA EXECUTADA!");
 });
 
-//app.listen(8000, "127.0.0.1", function(){
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(8000, "127.0.0.1", function(){
+//app.listen(process.env.PORT, process.env.IP, function(){
   console.log("ABM *** SERVIÇO NO AR!");
 });
 
