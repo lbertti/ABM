@@ -26,8 +26,8 @@
 
 	
 <div class="fixed-top">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<!--div class="container"-->
+		<nav class="navbar navbar-expand navbar-dark bg-dark">
 			<a class="navbar-brand" href="/">
 				ABM 
 				<i class="fas fa-bus"></i>
@@ -37,10 +37,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
 				<ul class="navbar-nav">
-					<!-- <li class="nav-item active" id="liTodasLinhas">
-						<a class="nav-link" href="/">Todas Linhas <span class="sr-only">(current)</span></a>
-					</li> -->
-					<% if(mostraTodasLinhas) { %> 
+					<% if(mostraTodasLinhas) { %>
 						<li class="nav-item dropdown" id="liDropdownLinhas">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Linhas
@@ -58,18 +55,16 @@
 							<a class="nav-link" href="/">Linhas</a>
 						</li>
 					<% }; %>
-					<li class="nav-item">
-						<a class="nav-link" href="/observacoes">Obs.</a>
-					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Pontos
+							<i class="fas fa-bars"></i>
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<div class="bg-light text-dark dropdown-item disabled pontos"><i class="far fa-dot-circle"></i> PONTOS
 							<% var sentido = "" %>
 							<% rotas.forEach(function(rota){ %>
 								<% if( sentido != rota.sentido) { %>
-									<div class="dropdown-item disabled">
+									<div class="dropdown-item disabled padding0">
 										<span class="badge badge-secondary largo100
 											 <% if( rota.sentido === "BARRA" ) { %>
 													vermelhoMenu">SENTIDO
@@ -86,12 +81,14 @@
 									<% sentido = rota.sentido; %>
 								<% }; %>
 
-								<a class="dropdown-item" href="/rota/<%= rota._id %>"><i class="far fa-hand-paper"></i> <%= rota.via %></a>
+								<a class="dropdown-item " href="/rota/<%= rota._id %>"><i class="far fa-hand-paper"></i> <%= rota.via %></a>
 							<% }); %>
+							</div>
+
+						<a class="dropdown-item bg-primary text-white" href="/observacoes"><i class="fas fa-quote-left"></i> OBSERVAÇÕES</a>
+						<a class="dropdown-item bg-info text-white" href="/sobre"><i class="fas fa-at"></i> SOBRE</a>
 						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/sobre"><i class="fas fa-at"></i></a>
+
 					</li>
 				</ul>
 			</div>

@@ -6,7 +6,7 @@ ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por d
 
 -->
 <% include ./parciais/cabecalho %>
-<div class="container" id="tabela">
+<div class="" id="tabela">
 	<div class="table-responsive">
 		<!-- 6 COLUNAS -->
 		<div class = "row">
@@ -22,10 +22,10 @@ ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por d
 			<div class="col-2 bg-secondary text-white">
 				Destino
 			</div>
-			<div class="col-4 bg-secondary text-white">
+			<div class="col-3 bg-secondary text-white">
 				Via
 			</div>
-			<div class="col-1 bg-secondary text-white">
+			<div class="col-2 bg-secondary text-white">
 				Obs.
 			</div>
 			<div class="w-100"></div>     <!-- QUEBRA DE LINHA DO GRID -->
@@ -34,7 +34,7 @@ ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por d
 				<div class="col-1 align-middle border-bottom <%=linha.cor%>"><%= linha.numero %></div>
 				<div class="col-2 align-middle border-bottom <%=linha.cor%>"><%= linha.horario %></div>
 				<% if(linha.cor.indexOf("amarelo") > -1){ %>
-					<div class="col-8 align-middle border-bottom <%=linha.cor%>">
+					<div class="col-7 align-middle border-bottom <%=linha.cor%>">
 						<% if(linha.destino.indexOf("Circ.Shop") > -1){ %>
 							<i class="fas fa-shopping-bag"></i>
 						<% } %>
@@ -42,9 +42,9 @@ ver http://getbootstrap.com/docs/4.1/layout/grid/ para substituir a tabela por d
 				<% } else { %>
 					<div class="col-2 align-middle border-bottom <%=linha.cor%>"><%= linha.origem %></div>
 					<div class="col-2 align-middle border-bottom <%=linha.cor%>"><%= linha.destino %></div>
-					<div class="col-4 align-middle border-bottom <%=linha.cor%>"><%= linha.via %></div>
+					<div class="col-3 align-middle border-bottom <%=linha.cor%>"><%= linha.via %></div>
 				<% } %>
-				<div class="col-1 align-middle border-bottom <%=linha.cor%>" id="obs">
+				<div class="col-2 align-middle border-bottom <%=linha.cor%>" id="obs">
 					<% if (linha.observacoes.length > 0){ %>
 						<a tabindex="<%= i %>" role="button" class="btn btn-light btn-sm <%=linha.cor%>" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom"
 						data-content="
