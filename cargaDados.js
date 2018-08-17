@@ -478,7 +478,16 @@ var dadosLinha = [
 {numero:4, horario: "18:40", destino: "Circ.Shopping",                                                                                                                                              cor: "amarelo sabado", ordem: 30},
 {numero:4, horario: "20:10", destino: "Circ.Shopping",                                                                                                                                              cor: "amarelo sabado", ordem: 30},
     {numero:4, horario: "21:10", destino: "Circ.Shopping",                                  observacoes: {   _id: "F",    texto: "Atenderá o Largo da Barra (2ª à 6ª)"},                            cor: "amarelo",        ordem: 30},
-    {numero:4, horario: "22:10", destino: "Circ.Shopping",                                  observacoes: {   _id: "F",    texto: "Atenderá o Largo da Barra (2ª à 6ª)"},                            cor: "amarelo",        ordem: 30}
+    {numero:4, horario: "22:10", destino: "Circ.Shopping",                                  observacoes: {   _id: "F",    texto: "Atenderá o Largo da Barra (2ª à 6ª)"},                            cor: "amarelo",        ordem: 30},
+
+    {numero:4, horario: "14:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30},
+    {numero:4, horario: "15:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30},
+    {numero:4, horario: "16:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30},
+    {numero:4, horario: "17:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30},
+    {numero:4, horario: "18:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30},
+    {numero:4, horario: "19:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30},
+    {numero:4, horario: "20:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30},
+    {numero:4, horario: "21:00", destino: "Circ.Shopping",                                  observacoes: {   _id: "DOM",    texto: "Somente aos domingos (desde 05/08/2018)"},                            cor: "amarelo",        ordem: 30}
 
 ];
 
