@@ -2,7 +2,7 @@ Olá! Meu nome é Lucas, sou Analista de Sistemas por formação, graduado na PU
 
 Há algum tempo voltei a estudar programação, para me inteirar das novas tecnologias.
 
-Para colocar um pouco em prática, resolvi fazer algo que trouxesse alguma facilidade para o meu dia-a-dia, porém, não teria graça fazer algo dedicado a apenas uma pessoa, então pensei em algo que possa contribuir para um conjunto de pessoas, nesse caso, os usuários do transporte da Associação Bosque Marapendi (ABM), afinal, as melhores lembranças dos tempos de programação são aquelas onde eu via dezenas e, no caso da empresa de telefonia, milhares de pessoas utilizando um sistema desenvolvido por mim.
+Para colocar um pouco em prática, resolvi fazer algo que trouxesse alguma facilidade para o meu dia-a-dia, porém, não teria graça fazer algo dedicado a apenas uma pessoa, então pensei em algo que possa contribuir para um conjunto de pessoas, nesse caso, os usuários do transporte da Associação Bosque Marapendi (ABM).
 
 Espero que gostem e que traga alguma ajuda ou agilidade para o seu dia-a-dia.
 
