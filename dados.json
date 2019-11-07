@@ -187,13 +187,13 @@
     },
     "Tijuca Circular UERJ" : {
       "cor" : "green",
-      "destino" : "Tij.Circ/UERJ",
+      "destino" : "Tij.Circ /UERJ",
       "origem" : "Barra da Tijuca",
       "1" : {
         "horario" : "05:50",
         "numero" : 4,
         "obs" : [ "GC" ],
-        "via" : "Alto B.Vista/UERJ "
+        "via" : "Alto B.Vista /UERJ "
       },
       "2" : {
         "numero" : 13, "horario" : "06:40", "via" : "Alto B. Vista ", "obs" : [ "GC", "L" ]
